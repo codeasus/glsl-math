@@ -19,6 +19,5 @@ void main() {
 vec4 rectangle(vec2 ref_canvas, vec2 pos, vec2 scale) {
     bool w = ref_canvas.x > pos.x-scale.x/2.0 && ref_canvas.x<pos.x+scale.x/2.0;
     bool h = ref_canvas.y > pos.y-scale.y/2.0 && ref_canvas.y<pos.y+scale.y/2.0;
-             
     return vec4(vec3(!(w && h)), 1.0);
 }
