@@ -40,13 +40,13 @@ void main() {
         vec4 gradient_color = mix(wave2_c1, wave2_c2, blend_factor);
         gl_FragColor = gradient_color;
     }
-    else if(wave_three.x < wave_three.y - 0.35) {
+    else if(wave_three.x < wave_three.y - 0.45) {
         float blend_factor = mix(-0.1, 0.3, (uv_corrected.x - uv_corrected.y) * 3.5);    
         vec4 gradient_color = mix(wave1_c1, wave1_c2, blend_factor);
         gl_FragColor = gradient_color;
     } 
-    else if(wave_four.x < wave_four.y - 0.08) {
-        float blend_factor = mix(-0.1, 0.5, (uv_corrected.x - uv_corrected.y) * 3.5);    
+    else if(wave_four.x < wave_four.y - 0.15) {
+        float blend_factor = mix(-0.1, 0.5, (uv_corrected.x - uv_corrected.y) * 2.5);    
         vec4 gradient_color = mix(wave2_c1, wave2_c2, blend_factor);
         gl_FragColor = gradient_color;
     }
